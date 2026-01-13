@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd api
-        uv sync
+        uv sync --all-extras --dev
     
     - name: Run API tests
       run: |
